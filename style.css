@@ -1,0 +1,16 @@
+@import url(styles/section1.css);
+@import url(styles/navbar.css);
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+:root {
+  --ff1: Lexend Deca, sans-serif;
+  --ff2: Inter, sans-serif;
+  --fc1: #4F4F4F;
+  --shadow1: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */
