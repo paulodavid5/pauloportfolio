@@ -1,27 +1,33 @@
-.navbar {
+nav {
     margin: 0;
     padding: 0;
+    position: fixed;
+    top: 0;
+    right: 10px;
+    z-index: 99;
+    display: flex;
+    gap: 1rem;
+    margin: 0.5rem 5rem;
 
-    ul {
-        position: absolute;
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        justify-content: end;
-        margin-right: 4rem;
-        gap: 1rem;
+    a {
+
         right: 0;
+        font-family: var(--ff2);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        cursor: pointer;
+        text-decoration: none;
 
-        li {
-            font-family: var(--ff2);
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 29px;
-            cursor: pointer;
-        }
+        color: #4c4c4c;
 
-        li:hover {
-            border-bottom: 2px solid #f2c94c;
-        }
+    }
+
+    a:hover {
+        border-bottom: 2px solid #f2c94c;
+    }
+
+    a.active {
+        border-bottom: 2px solid #f2c94c;
     }
 }

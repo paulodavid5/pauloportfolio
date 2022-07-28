@@ -12,16 +12,25 @@
 <body>
 
     <main>
-        <div class="navbar">
-            <ul>
-                <li>ABOUT</li>
-                <li>SKILLS</li>
+        <div class="buttons_togle" style="display: none;">
+            <button id="next"></button>
+            <button id="prev"></button>
+        </div>
+        <nav class="navbar">
+            <a href="#about">ABOUT</a>
+            <a href="#skills">SKILLS</a>
+            <a href="#portfolio">PORTFOLIO</a>
+            <a href="#contacts">CONTACTS</a>
+
+            <!-- <ul>
+                <li id="about_btn" href="#about">ABOUT</li>
+                <li id="skills_btn" href="#skills">SKILLS</li>
                 <li>PORTFOLIO</li>
                 <li>CONTACTS</li>
-            </ul>
-        </div>
+            </ul> -->
+        </nav>
 
-        <div class="section_1">
+        <section id="home">
             <div class="background_color"></div>
             <div class="name">
                 <div class="line_name"></div>
@@ -36,10 +45,34 @@
                 <div class="job_first">FRONT-END</div>
                 <div class="job_second">DEVELOPER</div>
             </div>
-        </div>
+        </section>
+        <section id="about">
+            <div class="title">
+                <div class="title_about">ABOUT ME</div>
+            </div>
+            <div class="about_content">
+                <div class="about_header">
+                    <h3>Hi my name is</h3>
+                    <h3>Paulo Gonçalves.</h3>
+                </div>
+                <div class="about_text">
+                    <p>I’m a 24 years old man who recently found a new passion in web development and wants to learn
+                        more
+                        every single day. I consider myself an self-taught person even though i completed an higher
+                        education in Web Development and Multimedia. </p>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="title">
+                <div class="line_title"></div>
+                <div class="title_about">ABOUT ME</div>
+            </div>
+        </section>
 
     </main>
 
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
