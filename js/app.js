@@ -42,8 +42,7 @@ const nextBtn = document.querySelector('#next')
 
 //logic scroll 
 var index = 0;
-const animationDurantion = 2000;
-let lastTime = 0;
+// const animationDurantion = 1000;
 
 nextBtn.addEventListener('click', () => {
     index++;
@@ -63,16 +62,28 @@ prevBtn.addEventListener('click', () => {
     })
 })
 
+const timeframe = 1000;
+
+function mouseSpeed(func, timeframe) {
+    var lastTime = 0;
+    return function () {
+        var now = new Date();
+        if (now - lastTime >= timeframe) {
+            func();
+            lastTime = now;
+        }
+    }
+}
+
 
 window.addEventListener('wheel', (e) => {
     const delta = e.wheelDelta;
-    const currentTime = new Date().getTime();
-
-    if (currentTime - lastTime < animationDurantion) {
-        e.preventDefault();
-        return;
-    }
-
+    // const currentTime = new Date().getTime();
+    // if (currentTime - lastTime < animationDurantion) {
+    //     e.preventDefault();
+    //     return;
+    // }
+    mouseSpeed();
     if (delta < 0) {
         const nextSection = new Event('click');
         nextBtn.dispatchEvent(nextSection);
@@ -81,7 +92,7 @@ window.addEventListener('wheel', (e) => {
         const prevSection = new Event('click');
         prevBtn.dispatchEvent(prevSection);
     }
-    lastTime = currentTime;
+    // lastTime = currentTime;
 });
 
 
