@@ -1,12 +1,24 @@
+
 //on scroll
-const scrollContainer = document.querySelector("main");
+function scroll() {
+    const scrollContainer = document.querySelector("main");
+    if (screen.width >= 768) {
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+        });
+    } else {
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollTop += evt.deltaY;
+        });
+    }
+}
 
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-});
+scroll();
 
 
+console.log(screen.width)
 // buttons active classe
 
 const btns = document.querySelectorAll('a');
@@ -37,7 +49,6 @@ const sections = document.querySelectorAll('section')
 const links = document.querySelectorAll('a')
 const prevBtn = document.querySelector('#prev')
 const nextBtn = document.querySelector('#next')
-
 
 
 //logic scroll 
