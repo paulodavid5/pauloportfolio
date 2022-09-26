@@ -1,7 +1,8 @@
 @import url(styles/section1.css);
 @import url(styles/navbar.css);
 @import url(styles/aboutsection.css);
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700;800&display=swap");
+@import url(styles/languages.css);
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 :root {
   --ff1: Lexend Deca, sans-serif;

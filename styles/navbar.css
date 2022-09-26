@@ -1,13 +1,12 @@
 nav {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  justify-content: center;
   position: fixed;
   top: 0;
-  right: 10px;
+  width: 100%;
   z-index: 99;
-  display: flex;
   gap: 1rem;
-  margin: 0.5rem 5rem;
+  margin: auto;
 }
 nav a {
   right: 0;

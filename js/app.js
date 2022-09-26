@@ -1,23 +1,4 @@
 
-//on scroll
-function scroll() {
-    const scrollContainer = document.querySelector("main");
-    if (screen.width >= 768) {
-        scrollContainer.addEventListener("wheel", (evt) => {
-            evt.preventDefault();
-            scrollContainer.scrollLeft += evt.deltaY;
-        });
-    } else {
-        scrollContainer.addEventListener("wheel", (evt) => {
-            evt.preventDefault();
-            scrollContainer.scrollTop += evt.deltaY;
-        });
-    }
-}
-
-scroll();
-
-
 console.log(screen.width)
 // buttons active classe
 
@@ -35,7 +16,6 @@ const callEvent = (elements) => {
 callEvent(btns);
 
 // on click button scroll to section
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -45,15 +25,18 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     })
 })
 
+// ---------------------------------------->
+
 const sections = document.querySelectorAll('section')
 const links = document.querySelectorAll('a')
 const prevBtn = document.querySelector('#prev')
 const nextBtn = document.querySelector('#next')
 
 
-//logic scroll 
+
+// //logic scroll
 var index = 0;
-// const animationDurantion = 1000;
+const animationDurantion = 1000;
 
 nextBtn.addEventListener('click', () => {
     index++;
@@ -75,39 +58,38 @@ prevBtn.addEventListener('click', () => {
 
 const timeframe = 1000;
 
-function mouseSpeed(func, timeframe) {
-    var lastTime = 0;
-    return function () {
-        var now = new Date();
-        if (now - lastTime >= timeframe) {
-            func();
-            lastTime = now;
-        }
+
+function mouseSpeed() {
+    const lastTime = 0;
+    var now = new Date();
+    if (now - lastTime >= timeframe) {
+        lastTime = now;
+        console.log(lastTime)
+        return
     }
 }
 
 
 window.addEventListener('wheel', (e) => {
-    const delta = e.wheelDelta;
-    // const currentTime = new Date().getTime();
-    // if (currentTime - lastTime < animationDurantion) {
-    //     e.preventDefault();
-    //     return;
-    // }
     mouseSpeed();
-    if (delta < 0) {
+    const delta = e.wheelDelta;
+    console.log(delta)
+    let currentTime = new Date().getTime();
+
+    if (currentTime - lastTime < animationDurantion) {
+        e.preventDefault();
+        return;
+    }
+
+    if (delta <= 0) {
         const nextSection = new Event('click');
         nextBtn.dispatchEvent(nextSection);
 
-    } else if (delta > 0) {
+    } else if (delta >= 0) {
         const prevSection = new Event('click');
         prevBtn.dispatchEvent(prevSection);
     }
-    // lastTime = currentTime;
+    lastTime = currentTime;
 });
-
-
-
-
 
 

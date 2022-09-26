@@ -1,0 +1,25 @@
+@media screen and (min-width: 481px) {
+  #languages {
+    -webkit-backdrop-filter: blur(25px);
+            backdrop-filter: blur(25px);
+  }
+  #languages .languages_title {
+    display: flex;
+    flex-direction: column;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-family: var(--ff1);
+    font-size: 64px;
+    font-weight: 800;
+    color: #212427;
+    border-bottom: 4px solid #F2C94C;
+    margin: 3rem;
+  }
+  #languages .languages_title span {
+    font-size: 36px;
+    font-weight: 400;
+    text-align: right;
+    color: #F2C94C;
+  }
+}/*# sourceMappingURL=languages.css.map */

@@ -10,7 +10,7 @@
     width: 100%;
     height: 100vh;
     right: 50%;
-    background-color: #D9D9D9;
+    background-color: rgba(217, 217, 217, 0.4);
     z-index: -1;
   }
   #home .name {
@@ -36,7 +36,6 @@
     height: 80px;
     left: 100px;
     top: 97px;
-    background-color: rgba(217, 217, 217, 0.9);
     border-radius: 14px 14px 0 0;
     padding-right: 0.5rem;
     text-align: left;
@@ -54,7 +53,6 @@
     height: 80px;
     left: 100px;
     top: 177px;
-    background-color: rgba(217, 217, 217, 0.9);
     border-radius: 0 14px 14px 14px;
     padding-right: 0.5rem;
     text-align: right;
@@ -373,10 +371,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    z-index: 2;
     margin: 60px 0 20px 90px;
     font-family: var(--ff1);
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 38px;
     color: #4F4F4F;
     background: none;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -384,16 +383,24 @@
   #home .name .line_name {
     width: 74px;
     position: absolute;
-    top: 45px;
+    top: 35px;
     left: -52px;
     border: 7px solid #f2c94c;
     transform: rotate(-90deg);
     background: #f2c94c;
   }
-  #home .name .name_first {
+  #home .name .name_cont {
+    text-align: left;
+    background: #b0b0b0;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.25rem 1rem;
+    margin-left: 0.5rem;
+  }
+  #home .name .name_cont .name_first {
     font-weight: 400;
   }
-  #home .name .name_second {
+  #home .name .name_cont .name_second {
     font-weight: 700;
   }
   #home .img_avatar {
@@ -401,9 +408,10 @@
     width: 100%;
     padding-left: 10px;
     position: fixed;
-    top: 51%;
+    bottom: -63px;
     left: 50%;
     transform: translateX(-49%);
+    rotate: -1deg;
   }
   #home .img_avatar img {
     width: 100%;
@@ -416,10 +424,10 @@
     flex-direction: column;
     align-items: flex-end;
     top: 25%;
-    margin: 70px 90px 0 0;
+    margin: 0px 90px 0 0;
     font-family: var(--ff1);
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 38px;
     color: #4F4F4F;
     background: none;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -427,16 +435,24 @@
   #home .job .line_job {
     width: 74px;
     position: absolute;
-    top: 45px;
+    top: 35px;
     right: -55px;
     border: 7px solid #f2c94c;
     transform: rotate(-90deg);
     background: #f2c94c;
   }
-  #home .job .job_first {
+  #home .job .job_cont {
+    text-align: right;
+    background: #b0b0b0;
+    color: #fff;
+    border-radius: 10px;
+    padding: 0.25rem 1rem;
+    margin-right: 0.5rem;
+  }
+  #home .job .job_cont .job_first {
     font-weight: 400;
   }
-  #home .job .job_second {
+  #home .job .job_cont .job_second {
     font-weight: 700;
   }
 }/*# sourceMappingURL=section1.css.map */
