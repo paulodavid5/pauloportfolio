@@ -6,111 +6,137 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img_icon" href="assets/PauloMobile.png">
+    <link rel="prefetch" src="./assets/PauloDesktop.png" as="image">
     <title>Paulo Gonçalves</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <main>
-        <div class="buttons_togle" style="display: none;">
+    <main class="swiper">
+        <!-- <div class="buttons_togle" style="display: none;">
             <button id="next"></button>
             <button id="prev"></button>
         </div>
         <nav class="navbar">
-            <a href="#home">PAULO</a>
-            <a href="#about">ABOUT</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#portfolio">PORTFOLIO</a>
-            <a href="#contacts">CONTACTS</a>
-
-            <!-- <ul>
-                <li id="about_btn" href="#about">ABOUT</li>
-                <li id="skills_btn" href="#skills">SKILLS</li>
-                <li>PORTFOLIO</li>
-                <li>CONTACTS</li>
-            </ul> -->
+            <a href="#home" class="navbar_link-1 active">PAULO</a>
+            <a href="#about" class="navbar_link-2">ABOUT</a>
+            <a href="#languages" class="navbar_link-3">SKILLS</a>
+            <a href="#portfolio" class="navbar_link-4">PORTFOLIO</a>
+            <a href="#contacts" class="navbar_link-5">CONTACT</a>
         </nav>
 
-        <section id="home" class="section-1">
-            <div class="background_color"></div>
-            <div class="name">
-                <div class="line_name"></div>
-                <div class="name_cont">
-                    <div class="name_first">PAULO</div>
-                    <div class="name_second">GONÇALVES</div>
-                </div>
+        <div class="progress-wrapper">
+            <div class="circle-wrapper">
+                <div href="#home" class="circle circle-1 active-circle"></div>
+                <div href="#about" class="circle circle-2"></div>
+                <div href="#languages" class="circle circle-3"></div>
+                <div href="#skills" class="circle circle-4"></div>
+                <div href="#portfolio" class="circle circle-5"></div>
+                <div href="#contact" class="circle circle-6"></div>
             </div>
-            <div class="img_avatar">
-                <img src="./assets/PauloDesktop.png" alt="Paulo">
-            </div>
-            <div class="job">
-                <div class="line_job"></div>
-                <div class="job_cont">
-                    <div class="job_first">FRONT-END</div>
-                    <div class="job_second">DEVELOPER</div>
-                </div>
-            </div>
-        </section>
-        <section id="about" class="section-2">
-            <div class="title">
-                <div class="title_about">ABOUT ME</div>
-            </div>
-            <div class="about_content">
+        </div> -->
 
-                <div class="about_text">
-                    <p>
-                        Hi my name is <span id="about_text_name">Paulo Gonçalves</span>.
-                        I’m a 24 years old man who recently found a new passion in web development and wants to learn
-                        more every single day.<br>
-                        I consider myself an self-taught person even though i completed an higher
-                        education in <span id="about_text_job">Web Development and Multimedia</span>.
-                    </p>
-                </div>
-            </div>
-        </section>
+        <!-- Slider main container -->
 
-        <section id="languages" class="section-3">
-            <div class="languages_title">LANGUAGES<span>LANGUAGES.</span></div>
-            <div class="languages_content">
-                <div class="lang">
-                    <div class="lang_title">PORTUGUESE</div>
-                    <div class="lang_exp">ADVANCED</div>
-                </div>
-                <div class="lang">
-                    <div class="lang_title">ENGLISH</div>
-                    <div class="lang_exp">ADVANCED</div>
-                </div>
-                <div class="lang">
-                    <div class="lang_title">SPANISH</div>
-                    <div class="lang_exp">REGULAR</div>
-                </div>
-            </div>
-        </section>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
 
-        <section id="skills" class="section-4">
-            <div class="skills_title">SKILLS <span>SKILLS</span></div>
-            <div class="skills_content">
-                <div class="skills">
-                    <div class="skills_title">PORTUGUESE</div>
-                    <div class="skills_exp">ADVANCED</div>
+            <section id="home" class="swiper-slide section-1">
+                <div class="background_color"></div>
+                <!-- <div class="home_content"> -->
+                <div class="name">
+                    <div class="line_name"></div>
+                    <div class="name_cont">
+                        <div class="name_first">PAULO</div>
+                        <div class="name_second">GONÇALVES</div>
+                    </div>
                 </div>
-                <div class="skills">
-                    <div class="skills_title">ENGLISH</div>
-                    <div class="skills_exp">ADVANCED</div>
+                <div class="img_avatar">
+                    <img src="./assets/PauloDesktop.png" alt="Paulo">
                 </div>
-                <div class="skills">
-                    <div class="skills_title">SPANISH</div>
-                    <div class="skills_exp">REGULAR</div>
+                <div class="job">
+                    <div class="line_job"></div>
+                    <div class="job_cont">
+                        <div class="job_first">FRONT-END</div>
+                        <div class="job_second">DEVELOPER</div>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="section-5">
+                <!-- </div> -->
+            </section>
+            <section id="about" class="swiper-slide section-2">
+                <div class="title">
+                    <div class="title_about">ABOUT ME</div>
+                </div>
+                <div class="about_content">
 
-        </section>
+                    <div class="about_text">
+                        <p>
+                            Hi my name is <span id="about_text_name">Paulo Gonçalves</span>.
+                            I’m a 24 years old man who recently found a new passion in web development and wants to
+                            learn
+                            more every single day.<br>
+                            I consider myself an self-taught person even though i completed an higher
+                            education in <span id="about_text_job">Web Development and Multimedia</span>.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="languages" class="swiper-slide section-3">
+                <div class="languages_title">LANGUAGES<span>LANGUAGES.</span></div>
+                <div class="languages_content">
+                    <div class="lang">
+                        <div class="lang_title">PORTUGUESE</div>
+                        <div class="lang_exp">ADVANCED</div>
+                    </div>
+                    <div class="lang">
+                        <div class="lang_title">ENGLISH</div>
+                        <div class="lang_exp">ADVANCED</div>
+                    </div>
+                    <div class="lang">
+                        <div class="lang_title">SPANISH</div>
+                        <div class="lang_exp">REGULAR</div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="swiper-slide section-4">
+                <div class="skills_title">SKILLS <span>SKILLS</span></div>
+                <div class="skills_content">
+                    <div class="skills">
+                        <div class="skills_title">PORTUGUESE</div>
+                        <div class="skills_exp">ADVANCED</div>
+                    </div>
+                    <div class="skills">
+                        <div class="skills_title">ENGLISH</div>
+                        <div class="skills_exp">ADVANCED</div>
+                    </div>
+                    <div class="skills">
+                        <div class="skills_title">SPANISH</div>
+                        <div class="skills_exp">REGULAR</div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio" class="swiper-slide section-5">
+                <div class="content">
+                    PORTFOLIO
+                </div>
+            </section>
+            <section id="contact" class="swiper-slide section-6">
+                <div class="content">
+                    Contactos
+                </div>
+            </section>
+        </div>
+        <div class="swiper-pagination"></div>
+
 
     </main>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

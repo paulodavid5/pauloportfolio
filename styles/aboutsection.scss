@@ -113,8 +113,9 @@
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
     #about {
-        overflow: scroll;
-        backdrop-filter: blur(22px);
+        // overflow: scroll;
+        height: 100vh;
+        backdrop-filter: blur(40px);
         z-index: 2;
 
         .title {
@@ -132,8 +133,9 @@
                 font-size: 38px;
                 line-height: 60px;
 
-                color: #333333;
+                color: #212427;
                 border-bottom: 7px solid #F2C94C;
+                // border-radius: 25px;
 
                 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             }
@@ -173,9 +175,9 @@
 
             .about_text {
 
-                margin: 3rem 2rem;
+                margin: 0rem 2rem;
                 padding: 0.5rem 1rem;
-                font-size: 20px;
+                font-size: 1.25em;
                 line-height: 30px;
                 word-spacing: 0px;
 
@@ -186,7 +188,8 @@
                 box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
 
                 span {
-                    font-weight: 400;
+                    // font-weight: 400;
+                    font-weight: bold;
                     // color: #F2C94C;
                 }
 
