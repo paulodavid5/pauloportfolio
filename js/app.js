@@ -31,6 +31,26 @@ var swiper = new Swiper(".swiper", {
 
 });
 
+var swiper2 = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    direction: "horizontal",
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 40,
+        stretch: 0,
+        depth: 50,
+        modifier: 1,
+        slideShadows: true,
+    },
+    // loop: true,
+    pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+    }
+});
+
         // direction: "horizontal",
         // slidesPerView: 1,
         // spaceBetween: 0,

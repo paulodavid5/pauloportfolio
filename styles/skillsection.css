@@ -1,5 +1,75 @@
-#skills {
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
-  z-index: 2;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #skills {
+    -webkit-backdrop-filter: blur(40px);
+            backdrop-filter: blur(40px);
+    z-index: 2;
+  }
+  #skills .skills_title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    text-align: right;
+    margin-left: 2rem;
+    font-family: var(--ff1);
+    font-weight: 700;
+    font-size: 38px;
+    color: #212427;
+    border-bottom: 7px solid #F2C94C;
+    margin: 2rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  #skills .skills_title span {
+    font-size: 24px;
+    font-weight: 400;
+    display: flex;
+    align-self: end;
+    color: #F2C94C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  #skills .skills_content .swiper-wrapper {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+  }
+  #skills .skills_content .swiper-wrapper .skills {
+    position: relative;
+    width: 60%;
+    height: 55%;
+    background: rgba(217, 217, 217, 0.6196078431);
+    border-radius: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
+  }
+  #skills .skills_content .swiper-wrapper .skills .skills_icon {
+    width: 40px;
+    height: auto;
+    position: absolute;
+    top: 1.5rem;
+    right: 1rem;
+  }
+  #skills .skills_content .swiper-wrapper .skills .skills_title {
+    font-size: 24px;
+  }
+  #skills .skills_content .swiper-wrapper .skills .skills_exp {
+    font-size: 20px;
+  }
+  #skills .skills_content .swiper-wrapper .skills .swiper-slide-shadow-left {
+    border-radius: 20px;
+  }
+  #skills .skills_content .swiper-wrapper .skills .swiper-slide-shadow-right {
+    border-radius: 20px;
+  }
+  #skills .skills_content .swiper-pagination {
+    display: flex;
+    top: 60vh;
+    justify-content: center;
+    width: 100%;
+    height: 4px;
+  }
 }/*# sourceMappingURL=skillsection.css.map */
