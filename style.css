@@ -3,6 +3,8 @@
 @import url(styles/aboutsection.css);
 @import url(styles/languages.css);
 @import url(styles/skillsection.css);
+@import url(styles/portfolio.css);
+@import url(styles/contact.css);
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 :root {
@@ -119,10 +121,11 @@ body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    width: 100vw;
   }
   section {
-    height: 100vh;
+    height: 100vh !important;
+    width: 100vw !important;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -130,39 +133,27 @@ body {
     width: 100%;
     height: 100%;
   }
-  .swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-    bottom: 5vh;
+  .swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
+    right: 10px;
+    top: 50vh;
+    transform: translate3d(0px, -50%, 0);
   }
   .swiper-pagination-bullet-active {
     --swiper-theme-color: #f2c94c;
-  }
-  .progress-wrapper {
-    position: fixed;
-    z-index: 100;
-    top: 50%;
-    right: 0.5rem;
-  }
-  .circle-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-  }
-  .circle {
-    width: 0.6rem;
-    height: 0.6rem;
-    border: 0.125rem solid #333333;
-    border-radius: 50%;
-    margin: 0 0.3rem;
   }
   main {
     display: flex;
     flex-direction: column;
     max-width: 100vw;
   }
-  section {
-    min-height: 100vh;
+  .img_avatar {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: -9em;
+  }
+  .img_avatar img {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */

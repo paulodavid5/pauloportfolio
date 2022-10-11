@@ -1,37 +1,45 @@
 
 var swiper = new Swiper(".swiper", {
-    // breakpoints: {
-    //     320: {
-    //         direction: "vertical",
-    //         slidesPerView: 1,
-    //         spaceBetween: 0,
-    //         mousewheel: true,
-    //         pagination: {
-    //             el: ".swiper-pagination",
-    //             clickable: true,
-    //         }
-    //     },
-    //     480: {
-    //         direction: "horizontal",
-    //         slidesPerView: 1,
-    //         spaceBetween: 0,
-    //         mousewheel: true,
-    //         pagination: {
-    //             el: ".swiper-pagination",
-    //             clickable: true,
-    //         }
-    //     }
-    // }
-    direction: "horizontal",
-    slidesPerView: 1,
-    spaceBetween: 0,
-    mousewheel: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+    breakpoints: {
+
+        320: {
+            direction: "vertical",
+            autoHeight: true,
+            height: window.innerHeight,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            // mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        },
+        480: {
+            direction: "horizontal",
+            autoHeight: true,
+            height: window.innerHeight,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            mousewheel: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            }
+        }
+
     }
 
 });
+
+        // direction: "horizontal",
+        // slidesPerView: 1,
+        // spaceBetween: 0,
+        // mousewheel: true,
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // }
+
 
 // console.log(screen.width)
 // // buttons active classe

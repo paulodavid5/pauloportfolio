@@ -131,7 +131,7 @@
                 font-family: var(--ff1);
                 font-weight: 700;
                 font-size: 38px;
-                line-height: 60px;
+                line-height: 45px;
 
                 color: #212427;
                 border-bottom: 7px solid #F2C94C;
@@ -175,9 +175,12 @@
 
             .about_text {
 
+                // max-height: 20rem;
+                // overflow: scroll;
+
                 margin: 0rem 2rem;
                 padding: 0.5rem 1rem;
-                font-size: 1.25em;
+                font-size: calc(0.75em + 1.5vmin);
                 line-height: 30px;
                 word-spacing: 0px;
 

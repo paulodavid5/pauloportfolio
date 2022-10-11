@@ -1,0 +1,6 @@
+#portfolio {
+  height: 100vh;
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  z-index: 2;
+}/*# sourceMappingURL=portfolio.css.map */
