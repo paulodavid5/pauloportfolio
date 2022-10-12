@@ -439,7 +439,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        // background-color: #D9D9D9;
+
 
 
         .background_color {
@@ -462,9 +462,9 @@
             font-family: var(--ff1);
             font-size: 32px;
             line-height: 38px;
-            color: #4F4F4F;
+            // color: var(--fc1);
             background: none;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
 
             // .line_name {
             //     width: 74px;
@@ -480,12 +480,13 @@
             .name_cont {
                 width: 198px;
                 text-align: left;
-                background: #b0b0b0;
-                color: #fff;
+                // background: #b0b0b0;
+                // color: #fff;
+                color: var(--fc1);
                 border-radius: 10px;
                 padding: 0.25rem 1rem;
                 // margin-left: 1rem;
-                border-left: 7px solid #F2C94C;
+                // border-left: 7px solid #F2C94C;
                 border-radius: 18px;
 
                 .name_first {
@@ -540,9 +541,9 @@
             font-family: var(--ff1);
             font-size: 32px;
             line-height: 38px;
-            color: #4F4F4F;
+            // color: #4F4F4F;
             background: none;
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
 
             // .line_job {
             //     width: 74px;
@@ -557,12 +558,13 @@
 
             .job_cont {
                 text-align: right;
-                background: #b0b0b0;
-                color: #fff;
+                // background: #b0b0b0;
+                // color: #fff;
+                color: var(--fc1);
                 border-radius: 10px;
                 padding: 0.25rem 1rem;
                 // margin-right: 1rem;
-                border-right: 7px solid #F2C94C;
+                // border-right: 7px solid #F2C94C;
                 border-radius: 18px;
 
                 .job_first {

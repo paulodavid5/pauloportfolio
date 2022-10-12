@@ -20,12 +20,12 @@
     font-weight: 700;
     font-size: 38px;
     color: #212427;
-    border-bottom: 7px solid #F2C94C;
+    border-bottom: 4px solid #F2C94C;
     margin: 2rem 3rem calc(5px + 5vh) 2rem;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
   #languages .languages_title span {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 400;
     display: flex;
     align-self: end;
@@ -52,7 +52,7 @@
   #languages .languages_content .lang .lang_title {
     font-family: var(--ff1);
     line-height: 40px;
-    color: #333333;
+    color: #212427;
     font-size: calc(1.5em + 1.5vmin);
   }
   #languages .languages_content .lang .lang_exp {
@@ -60,7 +60,7 @@
     font-weight: 400;
     font-size: calc(0.75em + 1.5vmin);
     line-height: 29px;
-    color: #333333;
+    color: #4f4f4f;
     padding-left: 5px;
   }
 }/*# sourceMappingURL=languages.css.map */

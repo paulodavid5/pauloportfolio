@@ -10,7 +10,8 @@
 :root {
   --ff1: Lexend Deca, sans-serif;
   --ff2: Inter, sans-serif;
-  --fc1: #4F4F4F;
+  --fc1: #333333;
+  --fc2: #212427;
   --shadow1: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --swiper-theme-color: #f2c94c;
 }
@@ -19,6 +20,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #fff;
 }
 
 .progress-wrapper {
@@ -155,5 +157,6 @@ body {
   }
   .img_avatar img {
     width: 90%;
+    filter: drop-shadow(12px 10px 16px #333333);
   }
 }/*# sourceMappingURL=style.css.map */
