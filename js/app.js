@@ -51,6 +51,12 @@ var swiper2 = new Swiper(".mySwiper", {
     }
 });
 
+// click events
+
+function openInNewTab(url) {
+    window.open(url, '_blank').focus();
+}
+
         // direction: "horizontal",
         // slidesPerView: 1,
         // spaceBetween: 0,

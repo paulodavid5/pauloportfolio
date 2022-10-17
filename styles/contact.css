@@ -44,9 +44,8 @@
   }
   #contact .content .box {
     display: flex;
-    justify-content: center;
-    align-self: center;
-    width: 70%;
+    align-items: center;
+    width: 80%;
     font-weight: 400;
     margin-bottom: 2em;
     background: rgba(217, 217, 217, 0.6196078431);
@@ -58,6 +57,20 @@
     line-height: 40px;
     color: #212427;
     font-size: 1em;
+  }
+  #contact .content .box .number_icon {
+    line-height: 0;
+    padding-right: 1rem;
+  }
+  #contact .content .box .number_icon img {
+    line-height: 0;
+  }
+  #contact .content .box .email_icon {
+    line-height: 0;
+    padding-right: 1rem;
+  }
+  #contact .content .box .email_icon img {
+    line-height: 0;
   }
   #contact .content .socials {
     line-height: 0;

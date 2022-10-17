@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img_icon" href="assets/PauloMobile.png">
-    <link rel="prefetch" src="./assets/PauloDesktop.png" as="image">
+    <!-- <link rel="prefetch" src="./assets/PauloDesktop.png" as="image"> -->
+    <link rel="preload" as="image" href="assets/PauloDesktop.png">
     <title>Paulo Gonçalves</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
@@ -110,56 +111,56 @@
                     <div class="swiper-wrapper">
                         <div class="skills swiper-slide">
                             <div class="skills_icon">
-                                <img src="./assets/html.svg" alt="html">
+                                <img src="./assets/html.svg" alt="html" loading="lazy">
                             </div>
                             <div class="skills_name">HTML</div>
                             <div class="skills_exp">ADVANCED</div>
                         </div>
                         <div class="skills swiper-slide">
                             <div class="skills_icon">
-                                <img src="./assets/css.svg" alt="css">
+                                <img src="./assets/css.svg" alt="css" loading="lazy">
                             </div>
                             <div class="skills_name">CSS</div>
                             <div class="skills_exp">ADVANCED</div>
                         </div>
                         <div class="skills swiper-slide">
                             <div class="skills_icon">
-                                <img src="./assets/sass.svg" alt="sass">
+                                <img src="./assets/sass.svg" alt="sass" loading="lazy">
                             </div>
                             <div class="skills_name">SASS</div>
                             <div class="skills_exp">REGULAR</div>
                         </div>
                         <div class="skills swiper-slide">
                             <div class="skills_icon">
-                                <img src="./assets/javascript.svg" alt="JS">
+                                <img src="./assets/javascript.svg" alt="JS" loading="lazy">
                             </div>
                             <div class="skills_name">JAVASCRIPT</div>
                             <div class="skills_exp">REGULAR</div>
                         </div>
                         <div class="skills swiper-slide">
                             <div class="skills_icon">
-                                <img src="./assets/mysql.svg" alt="mysql">
+                                <img src="./assets/mysql.svg" alt="mysql" loading="lazy">
                             </div>
                             <div class="skills_name">MYSQL</div>
                             <div class="skills_exp">REGULAR</div>
                         </div>
                         <div class="skills swiper-slide">
                             <div class="skills_icon">
-                                <img src="./assets/github.svg" alt="github">
+                                <img src="./assets/github.svg" alt="github" loading="lazy">
                             </div>
                             <div class="skills_name">GITHUB</div>
                             <div class="skills_exp">REGULAR</div>
                         </div>
                         <div class="skills swiper-slide">
                             <div class="skills_icon">
-                                <img src="./assets/figma.svg" alt="figma">
+                                <img src="./assets/figma.svg" alt="figma" loading="lazy">
                             </div>
                             <div class="skills_name">FIGMA</div>
                             <div class="skills_exp">REGULAR</div>
                         </div>
                         <div class="skills swiper-slide">
                             <div class="skills_icon">
-                                <img src="./assets/photoshop.svg" alt="PS">
+                                <img src="./assets/photoshop.svg" alt="PS" loading="lazy">
                             </div>
                             <div class="skills_name">PHOTOSHOP</div>
                             <div class="skills_exp">REGULAR</div>
@@ -178,15 +179,26 @@
                     <div class="title_contact">CONTACTS<span>CONTACTS.</span></div>
                 </div>
                 <div class="content">
-                    <div class="box number">926041485</div>
-                    <div class="box email">paulodaviddias8@gmail.com</div>
+                    <div class="box number">
+                        <div class="number_icon">
+                            <img src="assets/phone.svg" alt="phone" loading="lazy">
+                        </div>
+                        926041485
+                    </div>
+                    <div class="box email">
+                        <div class="email_icon">
+                            <img src="assets/email.svg" alt="email" loading="lazy">
+                        </div>
+                        paulodaviddias8@gmail.com
+                    </div>
                     <div class="socials">
-                        <div class="git" href="https://github.com/paulodavid5">
-                            <img src="assets/github.png" alt="github">
+                        <div class="git" onclick="openInNewTab('https://github.com/paulodavid5')">
+                            <img src="assets/github.svg" alt="github" loading="lazy">
 
                         </div>
-                        <div class="linkedin">
-                            <img src="assets/linkedin.png" alt="linkedin">
+                        <div class="linkedin"
+                            onclick="openInNewTab('https://www.linkedin.com/in/paulo-gon%C3%A7alves-344397194/')">
+                            <img src="assets/linkedin.svg" alt="linkedin" loading="lazy">
                         </div>
                     </div>
                 </div>
