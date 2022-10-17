@@ -40,7 +40,7 @@
         .skills_content {
 
             .swiper-wrapper {
-                height: 50vh;
+                height: 70vh;
                 display: flex;
                 align-items: center;
 
@@ -98,13 +98,13 @@
 
             .swiper-pagination {
                 display: flex;
-                top: 60vh;
+                top: 70vh;
                 justify-content: center;
                 width: 100%;
                 height: 4px;
             }
 
-            .swiper-pagination-progressbar {}
+
         }
     }
 }

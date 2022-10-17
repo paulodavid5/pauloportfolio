@@ -121,6 +121,8 @@
     font-weight: 400;
     color: #333333;
     margin-bottom: calc(5px + 5vh);
+    height: 75%;
+    justify-content: center;
   }
   #about .about_content .about_header {
     display: flex;
