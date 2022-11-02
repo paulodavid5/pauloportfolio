@@ -25,6 +25,19 @@ var swiper = new Swiper(".swiper", {
                 el: ".swiper-pagination",
                 clickable: true,
             }
+        },
+        1250: {
+            direction: "horizontal",
+            cssMode: true,
+            width: window.innerWidth,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            mousewheel: true,
+            keyboard: true,
         }
 
     }

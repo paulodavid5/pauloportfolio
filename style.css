@@ -10,8 +10,9 @@
 :root {
   --ff1: Lexend Deca, sans-serif;
   --ff2: Inter, sans-serif;
-  --fc1: #333333;
-  --fc2: #212427;
+  --fc1: #E6DADA;
+  --fc2: #274046;
+  --fc3: #4F4F4F;
   --shadow1: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --swiper-theme-color: #f2c94c;
 }
@@ -62,6 +63,11 @@ body {
   border: 0.5rem solid #f2c94c;
 }
 
+@media screen and (min-width: 1250px) {
+  .swiper-autoHeight {
+    height: 100vh !important;
+  }
+}
 @media screen and (min-width: 769px) {
   .progress-wrapper {
     position: fixed;
@@ -143,6 +149,27 @@ body {
   }
   .swiper-pagination-bullet-active {
     --swiper-theme-color: #f2c94c;
+  }
+  .menu {
+    min-width: 100px;
+    width: 70%;
+    max-width: 320px;
+    background-color: #2c8dfb;
+    color: #fff;
+  }
+  .content {
+    width: 100%;
+  }
+  .menu-button {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #2c8dfb;
+    /*margin: 14px;
+          border-radius: 5px;*/
   }
   main {
     display: flex;

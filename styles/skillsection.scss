@@ -17,7 +17,7 @@
             font-size: 38px;
             // line-height: 60px;
 
-            color: #212427;
+            color: var(--fc1);
             border-bottom: 4px solid #F2C94C;
             margin: 2rem;
 
@@ -76,14 +76,14 @@
                         font-family: var(--ff1);
                         font-size: 1.75em;
                         font-weight: 400;
-                        color: #212427;
+                        color: var(--fc3);
                     }
 
                     .skills_exp {
                         font-family: var(--ff2);
                         font-size: 1em;
                         font-weight: 400;
-                        color: #4f4f4f;
+                        color: var(--fc1);
                     }
 
                     .swiper-slide-shadow-left {

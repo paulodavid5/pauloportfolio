@@ -3,6 +3,7 @@
     -webkit-backdrop-filter: blur(25px);
             backdrop-filter: blur(25px);
     z-index: 2;
+    height: 100vh;
   }
   #about .title {
     display: flex;
@@ -18,7 +19,7 @@
     font-size: 64px;
     line-height: 80px;
     text-align: right;
-    color: #212427;
+    color: var(--fc1);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-bottom: 7px solid #f2c94c;
   }
@@ -31,48 +32,11 @@
   #about .about_content .about_text {
     position: relative;
   }
-  #about .about_content .about_text:before,
-#about .about_content .about_text:after,
-#about .about_content .about_text > :first-child:before,
-#about .about_content .about_text > :first-child:after {
-    position: absolute;
-    content: " ";
-    width: 80px;
-    height: 80px;
-    border-color: #333333;
-    /* or whatever colour */
-    border-style: solid;
-    /* or whatever style */
-  }
-  #about .about_content .about_text:before {
-    top: 0;
-    left: 0;
-    border-width: 4px 0 0 4px;
-    border-radius: 22px 0 0 0;
-  }
-  #about .about_content .about_text:after {
-    top: 0;
-    right: 0;
-    border-width: 4px 4px 0 0;
-    border-radius: 0 22px 0 0;
-  }
-  #about .about_content .about_text > :first-child:before {
-    bottom: 0;
-    right: 0;
-    border-width: 0 4px 4px 0;
-    border-radius: 0 0 22px 0;
-  }
-  #about .about_content .about_text > :first-child:after {
-    bottom: 0;
-    left: 0;
-    border-width: 0 0 4px 4px;
-    border-radius: 0 0 0 22px;
-  }
   #about .about_content .about_text {
     width: 50%;
     height: auto;
     float: left;
-    background: rgba(242, 242, 242, 0.9);
+    background: var(--fc1);
     padding: 1rem;
     box-shadow: 12px 15px 13px rgba(0, 0, 0, 0.5);
     border-radius: 22px;
@@ -82,7 +46,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 40px;
-    color: #040404;
+    color: var(--fc2);
     padding: 1rem;
     margin: 0;
   }
@@ -109,7 +73,7 @@
     font-weight: 700;
     font-size: 38px;
     line-height: 45px;
-    color: #212427;
+    color: var(--fc1);
     border-bottom: 4px solid #F2C94C;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
@@ -119,9 +83,9 @@
     align-items: center;
     font-family: var(--ff1);
     font-weight: 400;
-    color: #333333;
+    color: var(--fc2);
     margin-bottom: calc(5px + 5vh);
-    height: 75%;
+    height: 65%;
     justify-content: center;
   }
   #about .about_content .about_header {
