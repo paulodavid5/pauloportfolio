@@ -42,7 +42,7 @@
   #languages .languages_content .lang {
     font-weight: 400;
     margin-bottom: 2rem;
-    background: rgba(217, 217, 217, 0.6196078431);
+    background: var(--fc1);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -52,7 +52,7 @@
   #languages .languages_content .lang .lang_title {
     font-family: var(--ff1);
     line-height: 40px;
-    color: var(--fc1);
+    color: var(--fc2);
     font-size: calc(1.5em + 1.5vmin);
   }
   #languages .languages_content .lang .lang_exp {

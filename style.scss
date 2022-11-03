@@ -16,6 +16,7 @@
     $color1: #E6DADA;
     $color2: #274046;
     $color3: #4F4F4F;
+    $color4: rgba(217, 217, 217, 0.6196078431);
     $font1: 'Lexend Deca',
     sans-serif;
     $font2: 'Inter',
@@ -27,6 +28,7 @@
     --fc1: #{$color1};
     --fc2: #{$color2};
     --fc3: #{$color3};
+    --fc4: #{$color4};
     --shadow1: #{$shadow1};
     --swiper-theme-color: #f2c94c;
 
@@ -227,7 +229,11 @@ body {
     .swiper {
         width: 100%;
         height: 100%;
+    }
 
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
     }
 
     .swiper-pagination-vertical.swiper-pagination-bullets,
@@ -303,10 +309,6 @@ body {
         max-width: 100vw;
     }
 
-    section {
-        // min-height: 100vh;
-        // max-height: 100vh;
-    }
 
     .img_avatar {
         position: absolute;

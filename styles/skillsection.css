@@ -41,7 +41,7 @@
     position: relative;
     width: 60%;
     height: 65%;
-    background: rgba(217, 217, 217, 0.6196078431);
+    background: var(--fc1);
     border-radius: 20px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
@@ -65,13 +65,13 @@
     font-family: var(--ff1);
     font-size: 1.75em;
     font-weight: 400;
-    color: var(--fc3);
+    color: var(--fc2);
   }
   #skills .skills_content .swiper-wrapper .skills .skills_exp {
     font-family: var(--ff2);
     font-size: 1em;
     font-weight: 400;
-    color: var(--fc1);
+    color: var(--fc3);
   }
   #skills .skills_content .swiper-wrapper .skills .swiper-slide-shadow-left {
     border-radius: 20px;

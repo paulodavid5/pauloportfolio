@@ -28,16 +28,19 @@ var swiper = new Swiper(".swiper", {
         },
         1250: {
             direction: "horizontal",
-            cssMode: true,
+            // cssMode: true,
             width: window.innerWidth,
             slidesPerView: 1,
             spaceBetween: 0,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
             mousewheel: true,
-            keyboard: true,
         }
 
     }
@@ -69,6 +72,12 @@ var swiper2 = new Swiper(".mySwiper", {
 function openInNewTab(url) {
     window.open(url, '_blank').focus();
 }
+
+
+
+
+
+
 
         // direction: "horizontal",
         // slidesPerView: 1,

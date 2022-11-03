@@ -13,6 +13,7 @@
   --fc1: #E6DADA;
   --fc2: #274046;
   --fc3: #4F4F4F;
+  --fc4: rgba(217, 217, 217, 0.6196078431);
   --shadow1: 0px 4px 4px rgba(0, 0, 0, 0.25);
   --swiper-theme-color: #f2c94c;
 }
@@ -140,6 +141,10 @@ body {
   .swiper {
     width: 100%;
     height: 100%;
+  }
+  .swiper-button-next,
+.swiper-button-prev {
+    display: none;
   }
   .swiper-pagination-vertical.swiper-pagination-bullets,
 .swiper-vertical > .swiper-pagination-bullets {
