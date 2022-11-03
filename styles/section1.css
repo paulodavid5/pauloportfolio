@@ -107,7 +107,8 @@
     z-index: 2;
   }
   .img_avatarDesktop img {
-    width: 80%;
+    width: 45%;
+    border-radius: 45%;
   }
   .img_avatar {
     display: none;
