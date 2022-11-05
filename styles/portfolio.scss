@@ -45,11 +45,32 @@
             display: flex;
             align-items: center;
 
+            .portfolio:nth-child(1) {
+                background-image: url("/assets/disneyplus.png");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                .portfolio_name {
+                    backdrop-filter: contrast(0.5);
+                    transform: rotate(0deg);
+                    padding: 1rem;
+                    border-radius: 20px;
+                    margin-bottom: 3rem;
+                    color: var(--fc1);
+                }
+            }
+
+            .portfolio:nth-child(2) {
+                background: var(--fc1);
+            }
+
+
+
             .portfolio {
                 position: relative;
                 width: 60%;
                 height: 65%;
-                background: var(--fc1);
                 border-radius: 20px;
                 text-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
                 box-shadow: 6px 8px 4px rgb(0 0 0 / 25%);
@@ -59,27 +80,70 @@
                 justify-content: center;
                 align-items: center;
 
-                .portfolio_icon {
-                    width: 40px;
-                    height: auto;
-                    position: absolute;
-                    top: 1rem;
-                    right: 1rem;
 
-                    img {
-                        width: 1.75em;
-                        // height: 2em;
-                        filter: drop-shadow(7px 5px 3px #4f4f4f);
-                    }
-                }
+                // .portfolio_icon {
+                // width: 40px;
+                // height: auto;
+                // position: absolute;
+                // top: 1rem;
+                // right: 1rem;
+
+                // img {
+                //     width: 1.75em;
+                //     // height: 2em;
+                //     filter: drop-shadow(7px 5px 3px #4f4f4f);
+                // }
+                // }
 
                 .portfolio_name {
+                    width: min-content;
                     font-family: var(--ff1);
                     font-size: 1.75em;
                     font-weight: 400;
                     color: var(--fc2);
                     text-align: center;
                     transform: rotate(-25deg);
+                }
+
+                .portfolio_icons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 3rem;
+
+                    position: absolute;
+                    bottom: 2rem;
+
+                    >div {
+                        width: 40px;
+                        height: 40px;
+                        background: var(--fc1);
+                        color: var(--fc2);
+                        border-radius: 50%;
+
+                        >i {
+                            font-size: 1em;
+                            height: 100%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                    // .preview {
+                    //     width: 60px;
+                    //     height: 60px;
+                    //     background: var(--fc1);
+                    //     color: var(--fc2);
+                    //     border-radius: 50%;
+                    // }
+
+                    // .code {
+                    //     width: 60px;
+                    //     height: 60px;
+                    //     background: var(--fc1);
+                    //     color: var(--fc2);
+                    //     border-radius: 50%;
+                    // }
                 }
 
                 .portfolio_exp {
