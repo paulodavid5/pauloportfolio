@@ -1,3 +1,90 @@
+@media screen and (min-width: 1250px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+    #languages {
+        .languages_title {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: fit-content;
+            width: min-content;
+            text-align: right;
+            margin: 3rem;
+
+            font-family: var(--ff1);
+
+
+
+            color: var(--fc1);
+            border-bottom: 4px solid #F2C94C;
+
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            // margin-bottom: calc(5px + 5vh);
+
+            h1 {
+                font-weight: 700;
+                font-size: 2.5em;
+                margin: 0;
+            }
+
+            span {
+                font-size: 1em;
+                font-weight: 400;
+                display: flex;
+                align-self: end;
+                color: #F2C94C;
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                padding: 5px 0;
+            }
+        }
+
+        .languages_content {
+            height: 50vh;
+            display: grid;
+            place-items: center;
+            grid-template-columns: 1fr 1fr 1fr;
+
+
+            .lang {
+                background: var(--fc1);
+                padding: 0.5rem 1rem;
+                border-radius: 20px;
+                width: 170px;
+                text-align: center;
+
+                .lang_title {
+                    font-size: 1.5em;
+                    font-family: var(--ff1);
+                    font-weight: 700;
+                    color: var(--fc2);
+                    text-shadow: var(--shadow1);
+                }
+
+                .lang_exp {
+                    font-family: var(--ff2);
+                    font-weight: 400;
+                    font-size: 1em;
+                    line-height: 29px;
+                    color: var(--fc3);
+                    // text-align: right;
+                }
+            }
+
+            .lang:nth-child(1) {
+                justify-self: end;
+            }
+
+            .lang:nth-child(3) {
+                justify-self: start;
+            }
+
+
+        }
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {}
+
 @media screen and (min-width: 320px) and (max-width: 480px) {
     #languages {
         backdrop-filter: blur(40px);
@@ -107,4 +194,3 @@
 //                 }
 //             }
 //     }
-// }

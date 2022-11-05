@@ -26,6 +26,22 @@ var swiper = new Swiper(".swiper", {
                 clickable: true,
             }
         },
+        768: {
+            direction: "horizontal",
+            // cssMode: true,
+            width: window.innerWidth,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            mousewheel: true,
+        },
         1250: {
             direction: "horizontal",
             // cssMode: true,

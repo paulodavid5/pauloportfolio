@@ -115,77 +115,67 @@
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1250px) {
+  body {
+    background: #E6DADA;
+    /* fallback for old browsers */
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #274046, #E6DADA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
   #home {
     width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
   }
-  #home .background_color {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    right: 50%;
-    background-color: #D9D9D9;
-    z-index: -1;
+  #home .img_avatar {
+    display: none;
+  }
+  #home .img_avatarDesktop {
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+    transform: rotate(-1deg);
+  }
+  #home .img_avatarDesktop img {
+    width: 30%;
+    border-radius: 45%;
+    filter: drop-shadow(12px 10px 16px #333333);
   }
   #home .name {
-    position: relative;
     display: flex;
     flex: 1;
     flex-direction: column;
   }
-  #home .name .line_name {
+  #home .name .name_cont {
     position: absolute;
-    width: 117px;
-    height: 0px;
-    left: 10px;
-    top: 173px;
-    border: 7px solid #f2c94c;
-    background: #f2c94c;
-    transform: rotate(-90deg);
-  }
-  #home .name .name_cont .name_first {
-    position: absolute;
-    width: 215px;
-    height: 80px;
-    left: 100px;
-    top: 97px;
-    background-color: rgba(217, 217, 217, 0.9);
-    border-radius: 14px 14px 0 0;
-    padding-right: 0.5rem;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: left;
     z-index: 1;
     font-family: var(--ff1);
-    font-weight: 400;
-    font-size: 64px;
     line-height: 80px;
-    color: var(--fc1);
+    color: var(--fc2);
     text-shadow: var(--shadow1);
+    padding-right: 0.5rem;
+  }
+  #home .name .name_cont .name_first {
+    position: absolute;
+    left: 4rem;
+    border-radius: 14px 14px 0 0;
+    font-weight: 400;
+    font-size: 2.5em;
   }
   #home .name .name_cont .name_second {
     position: absolute;
-    width: 408px;
-    height: 80px;
-    left: 100px;
-    top: 177px;
-    background-color: rgba(217, 217, 217, 0.9);
+    left: 4rem;
+    top: 3rem;
     border-radius: 0 14px 14px 14px;
-    padding-right: 0.5rem;
     text-align: right;
     z-index: 1;
-    font-family: var(--ff1);
     font-weight: 700;
-    font-size: 64px;
-    line-height: 80px;
-    color: var(--fc1);
-    text-shadow: var(--shadow1);
-  }
-  #home .img_avatar img {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 2.5em;
   }
   #home .job {
     position: relative;
@@ -194,49 +184,38 @@
     flex-direction: column;
     text-align: left;
   }
-  #home .job .line_job {
-    position: absolute;
-    width: 117px;
-    height: 0px;
-    right: 10px;
-    top: 359px;
-    border: 7px solid #f2c94c;
-    background: #f2c94c;
-    transform: rotate(-90deg);
-  }
-  #home .job .job_first {
-    position: absolute;
-    width: 377px;
-    height: 80px;
-    right: 99px;
-    top: 285px;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 14px 14px 0 0;
-    padding-left: 0.5rem;
-    text-align: right;
+  #home .job .job_cont {
+    text-align: left;
+    z-index: 1;
     font-family: var(--ff1);
-    font-weight: 400;
-    font-size: 64px;
     line-height: 80px;
-    color: var(--fc1);
+    color: var(--fc2);
     text-shadow: var(--shadow1);
+    padding-right: 0.5rem;
   }
-  #home .job .job_second {
+  #home .job .job_cont .job_first {
     position: absolute;
-    width: 396px;
-    height: 80px;
-    right: 102px;
-    top: 365px;
-    background-color: rgba(255, 255, 255, 0.9);
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    right: 4rem;
+    border-radius: 14px 14px 0 0;
+    font-weight: 400;
+    font-size: 2.5em;
+  }
+  #home .job .job_cont .job_second {
+    position: absolute;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    right: 4rem;
+    top: 3rem;
     border-radius: 14px 0 14px 14px;
     padding-left: 0.5rem;
     text-align: right;
     font-family: var(--ff1);
     font-weight: 700;
-    font-size: 64px;
-    line-height: 80px;
-    color: var(--fc1);
-    text-shadow: var(--shadow1);
+    font-size: 2.5em;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
