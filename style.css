@@ -25,6 +25,10 @@ body {
   background-color: #fff;
 }
 
+html {
+  font-size: 100%;
+}
+
 .progress-wrapper {
   position: fixed;
   z-index: 100;
