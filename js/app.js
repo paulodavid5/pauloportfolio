@@ -36,11 +36,12 @@ var swiper = new Swiper(".swiper", {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            mousewheel: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            mousewheel: true,
+
         },
         1250: {
             direction: "horizontal",
@@ -52,11 +53,11 @@ var swiper = new Swiper(".swiper", {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
+            mousewheel: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
             },
-            mousewheel: true,
         }
 
     }
@@ -65,7 +66,6 @@ var swiper = new Swiper(".swiper", {
 
 var swiper2 = new Swiper(".mySwiper", {
     effect: "coverflow",
-    grabCursor: true,
     centeredSlides: true,
     direction: "horizontal",
     slidesPerView: "auto",
@@ -73,13 +73,45 @@ var swiper2 = new Swiper(".mySwiper", {
         rotate: 40,
         stretch: 0,
         depth: 50,
+        spaceBetween: 5,
         modifier: 1,
         slideShadows: true,
     },
     // loop: true,
+    mousewheel: true,
+
     pagination: {
         el: ".swiper-pagination",
         type: "progressbar",
+        // clickable: true,
+    },
+    breakpoints: {
+
+        320: {
+            slidesPerView: "auto",
+        },
+        480: {
+            slidesPerView: "auto",
+        },
+        1250: {
+            width: window.innerWidth,
+            slidesPerView: "3",
+            // loop: true,
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 100,
+                spaceBetween: 5,
+                modifier: 1,
+                slideShadows: true,
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
+        }
+
+
     }
 });
 
@@ -90,19 +122,41 @@ function openInNewTab(url) {
 }
 
 
+// navbar_link
+
+// const navbar_link = document.querySelectorAll('a');
+// console.log(navbar_link);
+
+// const sections = document.querySelectorAll('section');
 
 
 
 
 
-        // direction: "horizontal",
-        // slidesPerView: 1,
-        // spaceBetween: 0,
-        // mousewheel: true,
-        // pagination: {
-        //     el: ".swiper-pagination",
-        //     clickable: true,
-        // }
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//     anchor.addEventListener('click', function (e) {
+//         e.preventDefault();
+//         const active = document.querySelector(this.getAttribute('id')).slideTo(swiper.slides[active]);
+
+//         slideTo(swiper.slides[active]);
+//         // .scrollIntoView({
+//         //     behavior: 'smooth'
+//         // })
+//         console.log(anchor.getAttribute('id'));
+//     })
+// })
+
+// swiper.slides[1]
+
+
+// direction: "horizontal",
+// slidesPerView: 1,
+// spaceBetween: 0,
+// mousewheel: true,
+// pagination: {
+//     el: ".swiper-pagination",
+//     clickable: true,
+// }
 
 
 // console.log(screen.width)
