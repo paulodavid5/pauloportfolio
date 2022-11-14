@@ -15,8 +15,8 @@
 
                 font-family: var(--ff1);
                 font-weight: 800;
-                font-size: 64px;
-                line-height: 80px;
+                font-size: 2.5em;
+                // line-height: 80px;
                 text-align: right;
 
                 color: var(--fc1);
@@ -29,6 +29,7 @@
         }
 
         .about_content {
+            height: 41vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -101,10 +102,10 @@
         }
 
         .about_content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-top: 5rem;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 25%);
+
 
 
             .about_text {
@@ -114,9 +115,7 @@
 
             .about_text {
 
-                width: 50%;
-                height: auto;
-                float: left;
+                height: fit-content;
                 background: var(--fc1);
                 // background: rgba(189, 189, 189, 0.9);
                 padding: 1rem;
@@ -128,9 +127,10 @@
 
 
                 p {
+
                     font-family: var(--ff1);
                     font-weight: 500;
-                    font-size: 1em;
+                    font-size: 1.25em;
                     line-height: 2em;
                     // color: #333333;
                     color: var(--fc2);
@@ -369,4 +369,8 @@
             }
         }
     }
+}
+
+.box {
+    cursor: default;
 }

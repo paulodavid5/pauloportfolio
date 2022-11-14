@@ -18,31 +18,7 @@
 </head>
 
 <body>
-
     <main class="swiper">
-        <!-- <nav class="navbar">
-            <a id="1" href="#home" class="navbar_link-1">PAULO</a>
-            <a href="#about" class="navbar_link-2">ABOUT</a>
-            <a href="#languages" class="navbar_link-3">SKILLS</a>
-            <a href="#portfolio" class="navbar_link-4">PORTFOLIO</a>
-            <a href="#contacts" class="navbar_link-5">CONTACT</a>
-        </nav> -->
-        <!-- <div class="buttons_togle" style="display: none;">
-            <button id="next"></button>
-            <button id="prev"></button>
-        </div>
-        
-
-        <div class="progress-wrapper">
-            <div class="circle-wrapper">
-                <div href="#home" class="circle circle-1 active-circle"></div>
-                <div href="#about" class="circle circle-2"></div>
-                <div href="#languages" class="circle circle-3"></div>
-                <div href="#skills" class="circle circle-4"></div>
-                <div href="#portfolio" class="circle circle-5"></div>
-                <div href="#contact" class="circle circle-6"></div>
-            </div>
-        </div> -->
 
         <!-- Slider main container -->
 
@@ -50,8 +26,6 @@
         <div class="swiper-wrapper">
 
             <section id="home" class="swiper-slide section-1">
-                <div class="background_color"></div>
-                <!-- <div class="home_content"> -->
                 <div class="name">
                     <div class="line_name"></div>
 
@@ -61,7 +35,7 @@
                     </div>
                 </div>
                 <div class="img_avatarDesktop">
-                    <img src="./assets/paulo.png" alt="Paulo" loading="lazy">
+                    <img src="./assets/paulo.png" alt="Paulo">
                 </div>
                 <!-- <div class="img_avatar">
                     <img src="./assets/PauloDesktop.png" alt="Paulo">
@@ -83,13 +57,18 @@
 
                     <div class="about_text">
                         <p>
-                            Hi my name is <span id="about_text_name">Paulo Gonçalves</span>.
+
+                            Hi my name is <strong>Paulo Gonçalves</strong>.
                             I’m a 24 years old man who recently found a new passion in web development and wants to
                             learn
                             more every single day.<br>
+
+
                             I consider myself an self-taught person even though i completed an higher
-                            education in <span id="about_text_job">Web Development and Multimedia</span>.
+                            education in <strong>Web Development and Multimedia</strong>.
+
                         </p>
+
                     </div>
                 </div>
             </section>
@@ -177,6 +156,9 @@
                     <div class="swiper-pagination"></div>
                     <div class="swiper-scrollbar"></div>
                 </div>
+                <div class="mousewheel">
+                    <!-- <div class="hide">Use scroll Wheel</div> -->
+                </div>
             </section>
             <section id="portfolio" class="swiper-slide section-5">
                 <div class="portfolio_content">
@@ -203,31 +185,36 @@
 
                             </div>
                         </div>
+                        <div class="swiper-scrollbar"></div>
                     </div>
+                </div>
+                <div class="mousewheel">
+                    <!-- <div class="hide">Use scroll Wheel</div> -->
                 </div>
             </section>
             <section id="contact" class="swiper-slide section-6">
-                <div class="title">
-                    <div class="title_contact">CONTACTS<span>CONTACTS.</span></div>
-                </div>
+                <div class="title_contact">CONTACTS<span>CONTACTS.</span></div>
+
                 <div class="content">
-                    <div class="box number">
-                        <div class="number_icon">
-                            <i class="fa-sharp fa-solid fa-phone" loading="lazy"></i>
+                    <div class="info_details">
+                        <div class="box number">
+                            <div class="number_icon">
+                                <i class="fa-sharp fa-solid fa-phone" loading="lazy"></i>
+                            </div>
+                            +351 926041485
                         </div>
-                        +351 926041485
-                    </div>
-                    <div class="box email">
-                        <div class="email_icon">
-                            <i class="fa-sharp fa-solid fa-envelope" loading="lazy"></i>
+                        <div class="box email">
+                            <div class="email_icon">
+                                <i class="fa-sharp fa-solid fa-envelope" loading="lazy"></i>
+                            </div>
+                            paulodaviddias8@gmail.com
                         </div>
-                        paulodaviddias8@gmail.com
-                    </div>
-                    <div class="box location">
-                        <div class="location_icon">
-                            <i class="fa-sharp fa-solid fa-location-dot" loading="lazy"></i>
+                        <div class="box location">
+                            <div class="location_icon">
+                                <i class="fa-sharp fa-solid fa-location-dot" loading="lazy"></i>
+                            </div>
+                            Monção, Portugal
                         </div>
-                        Monção, Portugal
                     </div>
                     <div class="socials">
                         <div class="git" onclick="openInNewTab('https://github.com/paulodavid5')">

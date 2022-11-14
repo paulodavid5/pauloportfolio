@@ -1,4 +1,5 @@
 
+
 var swiper = new Swiper(".swiper", {
     breakpoints: {
 
@@ -15,12 +16,12 @@ var swiper = new Swiper(".swiper", {
             }
         },
         480: {
-            direction: "horizontal",
+            direction: "vertical",
             autoHeight: true,
             height: window.innerHeight,
             slidesPerView: 1,
             spaceBetween: 0,
-            mousewheel: true,
+            // mousewheel: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -36,7 +37,7 @@ var swiper = new Swiper(".swiper", {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            mousewheel: true,
+
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -53,7 +54,7 @@ var swiper = new Swiper(".swiper", {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
             },
-            mousewheel: true,
+
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -66,44 +67,75 @@ var swiper = new Swiper(".swiper", {
 
 var swiper2 = new Swiper(".mySwiper", {
     effect: "coverflow",
+    // grabcursor: true,
     centeredSlides: true,
-    direction: "horizontal",
+    // direction: "horizontal",
     slidesPerView: "auto",
     coverflowEffect: {
         rotate: 40,
         stretch: 0,
         depth: 50,
-        spaceBetween: 5,
+        spaceBetween: 50,
         modifier: 1,
         slideShadows: true,
     },
     // loop: true,
     mousewheel: true,
 
-    pagination: {
-        el: ".swiper-pagination",
-        type: "progressbar",
-        // clickable: true,
-    },
+
     breakpoints: {
 
         320: {
             slidesPerView: "auto",
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+                // clickable: true,
+            },
         },
         480: {
             slidesPerView: "auto",
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+                // clickable: true,
+            },
+        },
+        768: {
+            // width: window.innerWidth,
+            slidesPerView: "2",
+            // loop: true,
+            coverflowEffect: {
+                rotate: 10,
+                stretch: 50,
+                depth: 100,
+                spaceBetween: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            scrollbar: {
+                el: '.swiper-scrollbar',
+                draggable: true,
+            },
         },
         1250: {
-            width: window.innerWidth,
+
+            // width: window.innerWidth,
             slidesPerView: "3",
             // loop: true,
             coverflowEffect: {
-                rotate: 0,
-                stretch: 0,
+                rotate: 10,
+                stretch: 50,
                 depth: 100,
-                spaceBetween: 5,
+                spaceBetween: 100,
                 modifier: 1,
                 slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
             },
             scrollbar: {
                 el: '.swiper-scrollbar',
@@ -120,6 +152,7 @@ var swiper2 = new Swiper(".mySwiper", {
 function openInNewTab(url) {
     window.open(url, '_blank').focus();
 }
+
 
 
 // navbar_link

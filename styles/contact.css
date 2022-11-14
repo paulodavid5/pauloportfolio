@@ -5,11 +5,151 @@
   z-index: 2;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  #contact .title {
-    width: 100%;
+@media screen and (min-width: 1250px) {
+  .title_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    text-align: right;
+    margin-left: 2rem;
+    font-family: var(--ff1);
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--fc1);
+    border-bottom: 4px solid #F2C94C;
+    margin: 2rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  #contact .title .title_contact {
+  .title_contact span {
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-self: end;
+    color: #F2C94C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+  .content .info_details {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .content .info_details .box {
+    display: flex;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 400;
+    margin-bottom: 2em;
+    background: var(--fc1);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
+    font-family: var(--ff1);
+    line-height: 40px;
+    color: var(--fc2);
+    font-size: 1.25em;
+    gap: 1rem;
+  }
+  .content .info_details .box:hover {
+    transition: all 0.4s ease-in-out;
+    background: var(--fc2);
+    color: var(--fc1);
+  }
+  .content .socials {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1250px) {
+  .title_contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    text-align: right;
+    margin-left: 2rem;
+    font-family: var(--ff1);
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--fc1);
+    border-bottom: 4px solid #F2C94C;
+    margin: 2rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .title_contact span {
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-self: end;
+    color: #F2C94C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100vh;
+  }
+  .content .info_details {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 7%;
+  }
+  .content .info_details .box {
+    display: flex;
+    align-items: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-weight: 400;
+    margin-bottom: 2em;
+    background: var(--fc1);
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
+    font-family: var(--ff1);
+    line-height: 40px;
+    color: var(--fc2);
+    font-size: 1.25em;
+    gap: 1rem;
+  }
+  .content .info_details .box:hover {
+    transition: all 0.4s ease-in-out;
+    background: var(--fc2);
+    color: var(--fc1);
+  }
+  .content .socials {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  #contact .title_contact {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -25,7 +165,7 @@
     margin: 2rem;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
-  #contact .title .title_contact span {
+  #contact .title_contact span {
     font-size: 18px;
     font-weight: 400;
     display: flex;
@@ -45,7 +185,7 @@
   #contact .content .box {
     display: flex;
     align-items: center;
-    width: 75%;
+    width: auto;
     font-weight: 400;
     margin-bottom: 2em;
     background: var(--fc1);
@@ -97,6 +237,7 @@
 .socials .linkedin:hover {
   background: var(--fc1);
   color: var(--fc2);
+  transition: all 0.4s ease;
 }
 .socials .fa-brands {
   font-size: 2rem;
