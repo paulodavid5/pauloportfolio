@@ -103,16 +103,16 @@ var swiper2 = new Swiper(".mySwiper", {
         },
         768: {
             // width: window.innerWidth,
-            slidesPerView: "2",
+            slidesPerView: "auto",
             // loop: true,
-            coverflowEffect: {
-                rotate: 10,
-                stretch: 50,
-                depth: 100,
-                spaceBetween: 100,
-                modifier: 1,
-                slideShadows: true,
-            },
+            // coverflowEffect: {
+            //     rotate: 10,
+            //     stretch: 50,
+            //     depth: 100,
+            //     spaceBetween: 100,
+            //     modifier: 1,
+            //     slideShadows: true,
+            // },
             pagination: {
                 el: ".swiper-pagination",
             },
@@ -124,12 +124,12 @@ var swiper2 = new Swiper(".mySwiper", {
         1250: {
 
             // width: window.innerWidth,
-            slidesPerView: "3",
+            slidesPerView: "auto",
             // loop: true,
             coverflowEffect: {
-                rotate: 10,
+                rotate: 0,
                 stretch: 50,
-                depth: 100,
+                depth: 0,
                 spaceBetween: 100,
                 modifier: 1,
                 slideShadows: true,
