@@ -31,37 +31,38 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     padding: 5px 0;
   }
-  #languages .languages_content {
-    height: 62vh;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+  #languages .languages_content .lang_info {
+    height: 43vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 7%;
   }
-  #languages .languages_content .lang {
+  #languages .languages_content .lang_info .lang {
     background: var(--fc1);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     width: 170px;
     text-align: center;
   }
-  #languages .languages_content .lang .lang_title {
+  #languages .languages_content .lang_info .lang .lang_title {
     font-size: 1.5em;
     font-family: var(--ff1);
     font-weight: 700;
     color: var(--fc2);
     text-shadow: var(--shadow1);
   }
-  #languages .languages_content .lang .lang_exp {
+  #languages .languages_content .lang_info .lang .lang_exp {
     font-family: var(--ff2);
     font-weight: 700;
     font-size: 1em;
     line-height: 29px;
     color: var(--fc3);
   }
-  #languages .languages_content .lang:nth-child(1) {
+  #languages .languages_content .lang_info .lang:nth-child(1) {
     justify-self: end;
   }
-  #languages .languages_content .lang:nth-child(3) {
+  #languages .languages_content .lang_info .lang:nth-child(3) {
     justify-self: start;
   }
 }
@@ -99,37 +100,41 @@
     padding: 5px 0;
   }
   #languages .languages_content {
-    height: 50vh;
+    height: 67vh;
+    margin-top: 9%;
+  }
+  #languages .languages_content .lang_info {
+    height: 43vh;
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 9%;
+    margin-top: 7%;
   }
-  #languages .languages_content .lang {
+  #languages .languages_content .lang_info .lang {
     background: var(--fc1);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     width: 170px;
     text-align: center;
   }
-  #languages .languages_content .lang .lang_title {
+  #languages .languages_content .lang_info .lang .lang_title {
     font-size: 1.5em;
     font-family: var(--ff1);
     font-weight: 700;
     color: var(--fc2);
     text-shadow: var(--shadow1);
   }
-  #languages .languages_content .lang .lang_exp {
+  #languages .languages_content .lang_info .lang .lang_exp {
     font-family: var(--ff2);
     font-weight: 400;
     font-size: 1em;
     line-height: 29px;
     color: var(--fc3);
   }
-  #languages .languages_content .lang:nth-child(1) {
+  #languages .languages_content .lang_info .lang:nth-child(1) {
     justify-self: end;
   }
-  #languages .languages_content .lang:nth-child(3) {
+  #languages .languages_content .lang_info .lang:nth-child(3) {
     justify-self: start;
   }
 }

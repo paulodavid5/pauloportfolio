@@ -38,45 +38,52 @@
         }
 
         .languages_content {
-            height: 62vh;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
 
-            .lang {
-                background: var(--fc1);
-                padding: 0.5rem 1rem;
-                border-radius: 20px;
-                width: 170px;
-                text-align: center;
+            // height: 62vh;
+            // display: flex;
+            // justify-content: space-evenly;
+            // align-items: center;
+            .lang_info {
+                height: 43vh;
+                display: grid;
+                place-items: center;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin-top: 7%;
 
-                .lang_title {
-                    font-size: 1.5em;
-                    font-family: var(--ff1);
-                    font-weight: 700;
-                    color: var(--fc2);
-                    text-shadow: var(--shadow1);
+                .lang {
+                    background: var(--fc1);
+                    padding: 0.5rem 1rem;
+                    border-radius: 20px;
+                    width: 170px;
+                    text-align: center;
+
+                    .lang_title {
+                        font-size: 1.5em;
+                        font-family: var(--ff1);
+                        font-weight: 700;
+                        color: var(--fc2);
+                        text-shadow: var(--shadow1);
+                    }
+
+                    .lang_exp {
+                        font-family: var(--ff2);
+                        font-weight: 700;
+                        font-size: 1em;
+                        line-height: 29px;
+                        color: var(--fc3);
+                        // text-align: right;
+                    }
                 }
 
-                .lang_exp {
-                    font-family: var(--ff2);
-                    font-weight: 700;
-                    font-size: 1em;
-                    line-height: 29px;
-                    color: var(--fc3);
-                    // text-align: right;
+                .lang:nth-child(1) {
+                    justify-self: end;
                 }
+
+                .lang:nth-child(3) {
+                    justify-self: start;
+                }
+
             }
-
-            .lang:nth-child(1) {
-                justify-self: end;
-            }
-
-            .lang:nth-child(3) {
-                justify-self: start;
-            }
-
-
         }
     }
 }
@@ -121,45 +128,54 @@
         }
 
         .languages_content {
-            height: 50vh;
-            display: grid;
-            place-items: center;
-            grid-template-columns: 1fr 1fr 1fr;
+            height: 67vh;
+            // display: flex;
+            // justify-content: center;
+            // display: grid;
+            // place-items: center;
+            // grid-template-columns: 1fr 1fr 1fr;
             margin-top: 9%;
 
-            .lang {
-                background: var(--fc1);
-                padding: 0.5rem 1rem;
-                border-radius: 20px;
-                width: 170px;
-                text-align: center;
+            .lang_info {
+                height: 43vh;
+                display: grid;
+                place-items: center;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin-top: 7%;
 
-                .lang_title {
-                    font-size: 1.5em;
-                    font-family: var(--ff1);
-                    font-weight: 700;
-                    color: var(--fc2);
-                    text-shadow: var(--shadow1);
+                .lang {
+                    background: var(--fc1);
+                    padding: 0.5rem 1rem;
+                    border-radius: 20px;
+                    width: 170px;
+                    text-align: center;
+
+                    .lang_title {
+                        font-size: 1.5em;
+                        font-family: var(--ff1);
+                        font-weight: 700;
+                        color: var(--fc2);
+                        text-shadow: var(--shadow1);
+                    }
+
+                    .lang_exp {
+                        font-family: var(--ff2);
+                        font-weight: 400;
+                        font-size: 1em;
+                        line-height: 29px;
+                        color: var(--fc3);
+                        // text-align: right;
+                    }
                 }
 
-                .lang_exp {
-                    font-family: var(--ff2);
-                    font-weight: 400;
-                    font-size: 1em;
-                    line-height: 29px;
-                    color: var(--fc3);
-                    // text-align: right;
+                .lang:nth-child(1) {
+                    justify-self: end;
+                }
+
+                .lang:nth-child(3) {
+                    justify-self: start;
                 }
             }
-
-            .lang:nth-child(1) {
-                justify-self: end;
-            }
-
-            .lang:nth-child(3) {
-                justify-self: start;
-            }
-
 
         }
     }
