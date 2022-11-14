@@ -1,3 +1,9 @@
+#skills {
+  -webkit-backdrop-filter: blur(40px);
+          backdrop-filter: blur(40px);
+  z-index: 3;
+}
+
 @media screen and (min-width: 1250px) {
   #skills {
     overflow: hidden;
@@ -226,7 +232,6 @@
   .skills_content .swiper-scrollbar {
     height: 10px;
     width: 50%;
-    cursor: pointer !important;
     position: relative;
     transform: translate(50%, -50%);
   }
