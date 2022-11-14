@@ -293,6 +293,130 @@
   }
 }
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .portfolio_title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    text-align: right;
+    margin-left: 2rem;
+    font-family: var(--ff1);
+    font-weight: 700;
+    font-size: 38px;
+    color: var(--fc1);
+    border-bottom: 4px solid #F2C94C;
+    margin: 2rem;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .portfolio_title span {
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    align-self: end;
+    color: #F2C94C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .portfolio_content .swiper-wrapper {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+  }
+  .portfolio_content .swiper-wrapper .portfolio:nth-child(1) {
+    background-image: url(../assets/disneyplus.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .portfolio_content .swiper-wrapper .portfolio:nth-child(1) .portfolio_name {
+    -webkit-backdrop-filter: contrast(0.5);
+            backdrop-filter: contrast(0.5);
+    transform: rotate(0deg);
+    padding: 1rem;
+    border-radius: 20px;
+    margin-bottom: 3rem;
+    color: var(--fc1);
+  }
+  .portfolio_content .swiper-wrapper .portfolio:nth-child(2) {
+    background: var(--fc2);
+  }
+  .portfolio_content .swiper-wrapper .portfolio:nth-child(2) .portfolio_name {
+    transform: rotate(0deg);
+    color: var(--fc1);
+  }
+  .portfolio_content .swiper-wrapper .portfolio {
+    position: relative;
+    width: 60%;
+    height: 65%;
+    border-radius: 20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio_content .swiper-wrapper .portfolio .portfolio_name {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    font-family: var(--ff2);
+    font-size: 1.75em;
+    font-weight: 700;
+    color: var(--fc1);
+    text-align: center;
+    transform: rotate(-25deg);
+  }
+  .portfolio_content .swiper-wrapper .portfolio .portfolio_icons {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    position: absolute;
+    bottom: 2rem;
+  }
+  .portfolio_content .swiper-wrapper .portfolio .portfolio_icons > div {
+    width: 40px;
+    height: 40px;
+    background: var(--fc1);
+    color: var(--fc2);
+    border-radius: 50%;
+  }
+  .portfolio_content .swiper-wrapper .portfolio .portfolio_icons > div > i {
+    font-size: 1em;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio_content .swiper-wrapper .portfolio .portfolio_exp {
+    font-family: var(--ff2);
+    font-size: 1em;
+    font-weight: 400;
+    color: var(--fc1);
+  }
+  .portfolio_content .swiper-wrapper .portfolio .swiper-slide-shadow-left {
+    border-radius: 20px;
+  }
+  .portfolio_content .swiper-wrapper .portfolio .swiper-slide-shadow-right {
+    border-radius: 20px;
+  }
+  .portfolio_content .swiper-pagination {
+    display: flex;
+    top: 70vh;
+    justify-content: center;
+    width: 100%;
+    height: 4px;
+  }
+  .portfolio_content .swiper-scrollbar {
+    display: none;
+  }
+  .mousewheel {
+    display: none;
+  }
   .swiper-scrollbar {
     display: none;
   }

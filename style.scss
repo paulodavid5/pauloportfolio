@@ -192,6 +192,10 @@ section {
         flex-direction: column;
         overflow-x: hidden;
 
+        .swiper-button-next,
+        .swiper-button-prev {
+            display: none;
+        }
     }
 
     section {
@@ -199,6 +203,7 @@ section {
         width: 100vw !important;
         overflow: hidden;
     }
+
 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) {
