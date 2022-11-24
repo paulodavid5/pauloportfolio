@@ -316,7 +316,7 @@
   #contact .content .box {
     display: flex;
     align-items: center;
-    width: auto;
+    width: 256px;
     font-weight: 400;
     margin-bottom: 2em;
     background: var(--fc1);
