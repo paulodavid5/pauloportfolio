@@ -150,10 +150,10 @@
                 }
             }
 
-            .portfolio:hover {
-                filter: brightness(1);
-                transition: all 0.5s ease;
-            }
+            // .portfolio:hover {
+            //     filter: brightness(1);
+            //     transition: all 0.5s ease;
+            // }
         }
 
         .swiper-pagination {
@@ -249,6 +249,10 @@
             }
 
             .portfolio:nth-child(2) {
+                background: var(--fc1);
+            }
+
+            .portfolio:nth-child(3) {
                 background: var(--fc1);
             }
 

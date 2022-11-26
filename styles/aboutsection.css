@@ -57,6 +57,7 @@
             backdrop-filter: blur(25px);
     z-index: 2;
     height: 100vh;
+    position: relative;
   }
   #about .title {
     display: flex;
@@ -78,8 +79,10 @@
   }
   #about .about_content {
     position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 25%);
+    transform: translate(-50%, -50%);
+    margin-top: 3rem;
   }
   #about .about_content .about_text {
     position: relative;

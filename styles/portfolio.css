@@ -123,10 +123,6 @@
   .portfolio_content .swiper-wrapper .portfolio .swiper-slide-shadow-right {
     border-radius: 20px;
   }
-  .portfolio_content .swiper-wrapper .portfolio:hover {
-    filter: brightness(1);
-    transition: all 0.5s ease;
-  }
   .portfolio_content .swiper-pagination {
     display: flex;
     top: 70vh;
@@ -205,6 +201,9 @@
     color: var(--fc1);
   }
   .portfolio_content .swiper-wrapper .portfolio:nth-child(2) {
+    background: var(--fc1);
+  }
+  .portfolio_content .swiper-wrapper .portfolio:nth-child(3) {
     background: var(--fc1);
   }
   .portfolio_content .swiper-wrapper .portfolio {
