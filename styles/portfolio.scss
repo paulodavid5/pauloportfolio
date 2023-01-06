@@ -273,19 +273,6 @@
 
                 transition: all 0.5s ease;
 
-                // .portfolio_icon {
-                // width: 40px;
-                // height: auto;
-                // position: absolute;
-                // top: 1rem;
-                // right: 1rem;
-
-                // img {
-                //     width: 1.75em;
-                //     // height: 2em;
-                //     filter: drop-shadow(7px 5px 3px #4f4f4f);
-                // }
-                // }
 
                 .portfolio_name {
                     width: min-content;
@@ -294,7 +281,7 @@
                     font-weight: 400;
                     color: var(--fc2);
                     text-align: center;
-                    transform: rotate(-25deg);
+                    // transform: rotate(-25deg);
                 }
 
                 .portfolio_icons {
@@ -328,23 +315,6 @@
 
                     }
 
-
-                    // .preview {
-                    // cursor: pointer;
-                    //     width: 60px;
-                    //     height: 60px;
-                    //     background: var(--fc1);
-                    //     color: var(--fc2);
-                    //     border-radius: 50%;
-                    // }
-
-                    // .code {
-                    //     width: 60px;
-                    //     height: 60px;
-                    //     background: var(--fc1);
-                    //     color: var(--fc2);
-                    //     border-radius: 50%;
-                    // }
                 }
 
 
@@ -455,7 +425,7 @@
                 background: var(--fc2);
 
                 .portfolio_name {
-                    transform: rotate(0deg);
+                    // transform: rotate(0deg);
                     color: var(--fc1);
                 }
             }
@@ -485,7 +455,7 @@
                     font-weight: 700;
                     color: var(--fc1);
                     text-align: center;
-                    transform: rotate(-25deg);
+                    // transform: rotate(-25deg);
                 }
 
                 .portfolio_icons {
@@ -651,7 +621,7 @@
                     font-weight: 700;
                     color: var(--fc1);
                     text-align: center;
-                    transform: rotate(-25deg);
+                    // transform: rotate(-25deg);
                 }
 
                 .portfolio_icons {

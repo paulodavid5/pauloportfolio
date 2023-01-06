@@ -45,10 +45,9 @@
     position: relative;
     width: 60%;
     height: 65%;
-    background: var(--fc1);
+    background: var(--fc4);
     border-radius: 20px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,13 +64,13 @@
     font-family: var(--ff1);
     font-size: 1.75em;
     font-weight: 400;
-    color: var(--fc2);
+    color: var(--fc1);
   }
   .skills_content .swiper-wrapper .skills .skills_exp {
     font-family: var(--ff2);
     font-size: 1em;
     font-weight: 400;
-    color: var(--fc3);
+    color: var(--fc2);
   }
   .skills_content .swiper-wrapper .skills .swiper-slide-shadow-left {
     border-radius: 20px;
@@ -188,10 +187,9 @@
     position: relative;
     width: 60%;
     height: 65%;
-    background: var(--fc1);
+    background: var(--fc4);
     border-radius: 20px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,24 +199,24 @@
     width: 40px;
     height: auto;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 2rem;
   }
   .skills_content .swiper-wrapper .skills .skills_icon img {
-    width: 1.75em;
+    width: 2.75em;
     filter: drop-shadow(7px 5px 3px #4f4f4f);
   }
   .skills_content .swiper-wrapper .skills .skills_name {
     font-family: var(--ff1);
     font-size: 1.75em;
     font-weight: 400;
-    color: var(--fc2);
+    color: var(--fc1);
   }
   .skills_content .swiper-wrapper .skills .skills_exp {
     font-family: var(--ff2);
     font-size: 1em;
     font-weight: 400;
-    color: var(--fc3);
+    color: var(--fc2);
   }
   .skills_content .swiper-wrapper .skills .swiper-slide-shadow-left {
     border-radius: 20px;
@@ -323,10 +321,9 @@
     position: relative;
     width: 60%;
     height: 65%;
-    background: var(--fc1);
+    background: var(--fc4);
     border-radius: 20px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -336,24 +333,24 @@
     width: 40px;
     height: auto;
     position: absolute;
-    top: 1rem;
-    right: 1rem;
+    top: 2rem;
+    right: 2rem;
   }
   .skills_content .swiper-wrapper .skills .skills_icon img {
-    width: 1.75em;
+    width: 2.75em;
     filter: drop-shadow(7px 5px 3px #4f4f4f);
   }
   .skills_content .swiper-wrapper .skills .skills_name {
     font-family: var(--ff1);
     font-size: 1.75em;
     font-weight: 400;
-    color: var(--fc2);
+    color: var(--fc1);
   }
   .skills_content .swiper-wrapper .skills .skills_exp {
     font-family: var(--ff1);
     font-size: 1em;
     font-weight: 400;
-    color: var(--fc3);
+    color: var(--fc2);
   }
   .skills_content .swiper-wrapper .skills .swiper-slide-shadow-left {
     border-radius: 20px;
@@ -418,10 +415,9 @@
     position: relative;
     width: 60%;
     height: 65%;
-    background: var(--fc1);
+    background: var(--fc4);
     border-radius: 20px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -442,13 +438,13 @@
     font-family: var(--ff1);
     font-size: 1.75em;
     font-weight: 400;
-    color: var(--fc2);
+    color: var(--fc1);
   }
   #skills .skills_content .swiper-wrapper .skills .skills_exp {
     font-family: var(--ff1);
     font-size: 1em;
     font-weight: 400;
-    color: var(--fc3);
+    color: var(--fc2);
   }
   #skills .skills_content .swiper-wrapper .skills .swiper-slide-shadow-left {
     border-radius: 20px;
