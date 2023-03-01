@@ -5,6 +5,42 @@
   z-index: 2;
 }
 
+.portfolio:nth-child(1) {
+  background-image: url(../assets/disneyplus.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portfolio:nth-child(1) .portfolio_name {
+  -webkit-backdrop-filter: contrast(0.5);
+          backdrop-filter: contrast(0.5);
+  transform: rotate(0deg);
+  padding: 1rem;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  color: var(--fc1);
+}
+
+.portfolio:nth-child(2) {
+  background-image: url(../assets/ai.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.portfolio:nth-child(2) .portfolio_name {
+  -webkit-backdrop-filter: contrast(0.5);
+          backdrop-filter: contrast(0.5);
+  transform: rotate(0deg);
+  padding: 1rem;
+  border-radius: 20px;
+  margin-bottom: 3rem;
+  color: var(--fc1);
+}
+
+.portfolio:nth-child(3) {
+  background: var(--fc2);
+}
+
 @media screen and (min-width: 1250px) {
   #portfolio {
     overflow: hidden;
@@ -41,24 +77,6 @@
     height: 70vh;
     display: flex;
     align-items: center;
-  }
-  .portfolio_content .swiper-wrapper .portfolio:nth-child(1) {
-    background-image: url(../assets/disneyplus.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .portfolio_content .swiper-wrapper .portfolio:nth-child(1) .portfolio_name {
-    -webkit-backdrop-filter: contrast(0.5);
-            backdrop-filter: contrast(0.5);
-    transform: rotate(0deg);
-    padding: 1rem;
-    border-radius: 20px;
-    margin-bottom: 3rem;
-    color: var(--fc1);
-  }
-  .portfolio_content .swiper-wrapper .portfolio:nth-child(2) {
-    background: var(--fc2);
   }
   .portfolio_content .swiper-wrapper .portfolio {
     position: relative;
@@ -185,12 +203,6 @@
     display: flex;
     align-items: center;
   }
-  .portfolio_content .swiper-wrapper .portfolio:nth-child(1) {
-    background-image: url(../assets/disneyplus.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
   .portfolio_content .swiper-wrapper .portfolio:nth-child(1) .portfolio_name {
     -webkit-backdrop-filter: contrast(0.5);
             backdrop-filter: contrast(0.5);
@@ -199,12 +211,6 @@
     border-radius: 20px;
     margin-bottom: 3rem;
     color: var(--fc1);
-  }
-  .portfolio_content .swiper-wrapper .portfolio:nth-child(2) {
-    background: var(--fc1);
-  }
-  .portfolio_content .swiper-wrapper .portfolio:nth-child(3) {
-    background: var(--fc1);
   }
   .portfolio_content .swiper-wrapper .portfolio {
     position: relative;
@@ -321,12 +327,6 @@
     display: flex;
     align-items: center;
   }
-  .portfolio_content .swiper-wrapper .portfolio:nth-child(1) {
-    background-image: url(../assets/disneyplus.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
   .portfolio_content .swiper-wrapper .portfolio:nth-child(1) .portfolio_name {
     -webkit-backdrop-filter: contrast(0.5);
             backdrop-filter: contrast(0.5);
@@ -335,9 +335,6 @@
     border-radius: 20px;
     margin-bottom: 3rem;
     color: var(--fc1);
-  }
-  .portfolio_content .swiper-wrapper .portfolio:nth-child(2) {
-    background: var(--fc2);
   }
   .portfolio_content .swiper-wrapper .portfolio:nth-child(2) .portfolio_name {
     color: var(--fc1);
@@ -349,7 +346,6 @@
     border-radius: 20px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-    background: var(--fc2);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -452,12 +448,6 @@
     display: flex;
     align-items: center;
   }
-  .portfolio_content .swiper-wrapper .portfolio:nth-child(1) {
-    background-image: url(../assets/disneyplus.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
   .portfolio_content .swiper-wrapper .portfolio:nth-child(1) .portfolio_name {
     -webkit-backdrop-filter: contrast(0.5);
             backdrop-filter: contrast(0.5);
@@ -467,13 +457,6 @@
     margin-bottom: 3rem;
     color: var(--fc1);
   }
-  .portfolio_content .swiper-wrapper .portfolio:nth-child(2) {
-    background: var(--fc2);
-  }
-  .portfolio_content .swiper-wrapper .portfolio:nth-child(2) .portfolio_name {
-    transform: rotate(0deg);
-    color: var(--fc1);
-  }
   .portfolio_content .swiper-wrapper .portfolio {
     position: relative;
     width: 60%;
@@ -481,7 +464,6 @@
     border-radius: 20px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     box-shadow: 6px 8px 4px rgba(0, 0, 0, 0.25);
-    background: var(--fc2);
     display: flex;
     flex-direction: column;
     justify-content: center;
