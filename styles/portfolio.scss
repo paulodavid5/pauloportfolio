@@ -40,6 +40,20 @@
     background: var(--fc2);
 }
 
+.portfolio_name {
+    color: var(--fc1) !important;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.portfolio_subname {
+    font-family: var(--ff1);
+    color: var(--fc1) !important;
+    background: var(--fc2) !important;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
 @media screen and (min-width: 1250px) {
     #portfolio {
         overflow: hidden;
