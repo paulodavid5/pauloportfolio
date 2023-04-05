@@ -26,6 +26,7 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: var(--fc2);
 }
 .portfolio:nth-child(2) .portfolio_name {
   -webkit-backdrop-filter: contrast(0.5);
@@ -114,7 +115,6 @@
     font-weight: 400;
     color: var(--fc1);
     text-align: center;
-    transform: rotate(-25deg);
   }
   .portfolio_content .swiper-wrapper .portfolio .portfolio_icons {
     display: flex;

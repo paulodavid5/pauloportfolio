@@ -77,7 +77,7 @@ var swiper2 = new Swiper(".mySwiper", {
         depth: 50,
         spaceBetween: 50,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
     },
     // loop: true,
     mousewheel: true,
@@ -124,15 +124,15 @@ var swiper2 = new Swiper(".mySwiper", {
         1250: {
 
             // width: window.innerWidth,
-            slidesPerView: "auto",
+            slidesPerView: 'auto',
             // loop: true,
             coverflowEffect: {
                 rotate: 0,
-                stretch: 50,
-                depth: 0,
-                spaceBetween: 100,
-                modifier: 1,
-                slideShadows: true,
+        stretch: 0,
+        depth: 400,
+        spaceBetween: 100,
+        modifier: 1,
+        slideShadows: true,
             },
             pagination: {
                 el: ".swiper-pagination",

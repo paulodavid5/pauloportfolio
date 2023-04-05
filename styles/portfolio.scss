@@ -25,6 +25,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: var(--fc2);
 
     .portfolio_name {
         backdrop-filter: contrast(0.5);
@@ -101,7 +102,8 @@
             display: flex;
             align-items: center;
 
-            // .portfolio:nth-child(1) {
+            // .portfolio:nth-child(1)::before {
+
             //     background-image: url(../assets/disneyplus.png);
             //     background-size: cover;
             //     background-position: center;
@@ -122,7 +124,7 @@
             //     background-size: cover;
             //     background-position: center;
             //     background-repeat: no-repeat;
-
+                // background-color: var(--fc2);
             //     .portfolio_name {
             //         backdrop-filter: contrast(0.5);
             //         transform: rotate(0deg);
@@ -134,8 +136,7 @@
             // }
 
 
-
-
+            
             .portfolio {
                 position: relative;
                 width: 60%;
@@ -160,7 +161,7 @@
                     font-weight: 400;
                     color: var(--fc1);
                     text-align: center;
-                    transform: rotate(-25deg);
+                    
                 }
 
                 .portfolio_icons {
