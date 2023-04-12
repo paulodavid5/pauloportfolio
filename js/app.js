@@ -1,159 +1,157 @@
+//function to reload page when resized
+function reloadOnResize() {
+  window.addEventListener("resize", () => {
+    location.reload();
+  });
+}
 
+document.addEventListener("DOMContentLoaded", () => {
+  reloadOnResize();
+});
 
 var swiper = new Swiper(".swiper", {
-    breakpoints: {
+  breakpoints: {
+    320: {
+      direction: "vertical",
+      autoHeight: true,
+      height: window.innerHeight,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      // mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    480: {
+      direction: "vertical",
+      autoHeight: true,
+      height: window.innerHeight,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      // mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    768: {
+      direction: "horizontal",
+      // cssMode: true,
+      width: window.innerWidth,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
 
-        320: {
-            direction: "vertical",
-            autoHeight: true,
-            height: window.innerHeight,
-            slidesPerView: 1,
-            spaceBetween: 0,
-            // mousewheel: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            }
-        },
-        480: {
-            direction: "vertical",
-            autoHeight: true,
-            height: window.innerHeight,
-            slidesPerView: 1,
-            spaceBetween: 0,
-            // mousewheel: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            }
-        },
-        768: {
-            direction: "horizontal",
-            // cssMode: true,
-            width: window.innerWidth,
-            slidesPerView: 1,
-            spaceBetween: 0,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    1250: {
+      direction: "horizontal",
+      // cssMode: true,
+      width: window.innerWidth,
+      slidesPerView: 1,
+      spaceBetween: 0,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
 
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-
-        },
-        1250: {
-            direction: "horizontal",
-            // cssMode: true,
-            width: window.innerWidth,
-            slidesPerView: 1,
-            spaceBetween: 0,
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        }
-
-    }
-
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+  },
 });
 
 var swiper2 = new Swiper(".mySwiper", {
-    effect: "coverflow",
-    // grabcursor: true,
-    centeredSlides: true,
-    // direction: "horizontal",
-    slidesPerView: "auto",
-    coverflowEffect: {
-        rotate: 40,
-        stretch: 0,
-        depth: 50,
-        spaceBetween: 50,
-        modifier: 1,
-        slideShadows: false,
+  effect: "coverflow",
+  // grabcursor: true,
+  centeredSlides: true,
+  // direction: "horizontal",
+  slidesPerView: "auto",
+  coverflowEffect: {
+    rotate: 40,
+    stretch: 0,
+    depth: 50,
+    spaceBetween: 50,
+    modifier: 1,
+    slideShadows: false,
+  },
+  // loop: true,
+  mousewheel: true,
+
+  breakpoints: {
+    320: {
+      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+        // clickable: true,
+      },
     },
-    // loop: true,
-    mousewheel: true,
-
-
-    breakpoints: {
-
-        320: {
-            slidesPerView: "auto",
-            pagination: {
-                el: ".swiper-pagination",
-                type: "progressbar",
-                // clickable: true,
-            },
-        },
-        480: {
-            slidesPerView: "auto",
-            pagination: {
-                el: ".swiper-pagination",
-                type: "progressbar",
-                // clickable: true,
-            },
-        },
-        768: {
-            // width: window.innerWidth,
-            slidesPerView: "auto",
-            // loop: true,
-            // coverflowEffect: {
-            //     rotate: 10,
-            //     stretch: 50,
-            //     depth: 100,
-            //     spaceBetween: 100,
-            //     modifier: 1,
-            //     slideShadows: true,
-            // },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                draggable: true,
-            },
-        },
-        1250: {
-
-            // width: window.innerWidth,
-            slidesPerView: 'auto',
-            // loop: true,
-            coverflowEffect: {
-                rotate: 0,
+    480: {
+      slidesPerView: "auto",
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+        // clickable: true,
+      },
+    },
+    768: {
+      // width: window.innerWidth,
+      slidesPerView: "auto",
+      // loop: true,
+      // coverflowEffect: {
+      //     rotate: 10,
+      //     stretch: 50,
+      //     depth: 100,
+      //     spaceBetween: 100,
+      //     modifier: 1,
+      //     slideShadows: true,
+      // },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+      },
+    },
+    1250: {
+      // width: window.innerWidth,
+      slidesPerView: "auto",
+      // loop: true,
+      coverflowEffect: {
+        rotate: 0,
         stretch: 0,
         depth: 400,
         spaceBetween: 100,
         modifier: 1,
         slideShadows: true,
-            },
-            pagination: {
-                el: ".swiper-pagination",
-            },
-            scrollbar: {
-                el: '.swiper-scrollbar',
-                draggable: true,
-            },
-        }
-
-
-    }
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      scrollbar: {
+        el: ".swiper-scrollbar",
+        draggable: true,
+      },
+    },
+  },
 });
 
 // click events
 
 function openInNewTab(url) {
-    window.open(url, '_blank').focus();
+  window.open(url, "_blank").focus();
 }
-
-
 
 // navbar_link
 
@@ -161,10 +159,6 @@ function openInNewTab(url) {
 // console.log(navbar_link);
 
 // const sections = document.querySelectorAll('section');
-
-
-
-
 
 // document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 //     anchor.addEventListener('click', function (e) {
@@ -181,7 +175,6 @@ function openInNewTab(url) {
 
 // swiper.slides[1]
 
-
 // direction: "horizontal",
 // slidesPerView: 1,
 // spaceBetween: 0,
@@ -190,7 +183,6 @@ function openInNewTab(url) {
 //     el: ".swiper-pagination",
 //     clickable: true,
 // }
-
 
 // console.log(screen.width)
 // // buttons active classe
@@ -304,9 +296,6 @@ function openInNewTab(url) {
 
 // // const timeframe = 1000;
 
-
-
-
 // window.addEventListener('wheel', (e) => {
 
 //     if (e.deltaY > 0) {
@@ -317,8 +306,6 @@ function openInNewTab(url) {
 //         const prevSection = new Event('click');
 //         prevBtn.dispatchEvent(prevSection);
 //     }
-
-
 
 //     console.log(index);
 // });
@@ -347,5 +334,3 @@ function openInNewTab(url) {
 //         };
 //     };
 // }, false);
-
-
